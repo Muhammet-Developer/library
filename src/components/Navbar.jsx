@@ -1,6 +1,6 @@
 import Search from "./Search";
 
-const Navbar = () => {
+const Navbar = ({text, setText, bookData, setBookData, api}) => {
   return (
     <nav
       className="
@@ -81,7 +81,7 @@ const Navbar = () => {
           {/* Left links */}
         </div>
         {/* Collapsible wrapper */}
-       <Search/>
+       <Search text={text} setText={setText} bookData={bookData} setBookData={setBookData} api={api}/>
       </div>
     </nav>
   );

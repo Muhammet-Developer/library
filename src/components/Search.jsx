@@ -1,22 +1,12 @@
 import axios from 'axios';
 import  {useEffect, useState} from 'react'
 
-const Search = () => {
-    const [text, setText] = useState("");
-    const [bookData,setData]=useState([]);
-    
-    const api = async() => {
-        axios.get('https://www.googleapis.com/books/v1/volumes?q='+text+`&key=${process.env.REACT_APP_APP_KEY}`+'&maxResults=40')
-        .then(res=>console.log(res.data.items))
-        .catch(err=>console.log(err))
-    }
-    useEffect(() => {
-    api()
-    }, [])
-    
+const Search = ({text, setText, api}) => {
+
     const handleSubmit = (e) => {
         e.preventDefault()
         api()
+        setText("")
     }
   return (
     <>
