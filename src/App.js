@@ -6,7 +6,7 @@ import Carousel from './components/Carousel';
 import Navbar from './components/Navbar';
 
 function App() {
-  const [text, setText] = useState("namık kemal");
+  const [text, setText] = useState("hugo");
   const [bookData,setBookData]=useState([]);
   
   const api = async() => {

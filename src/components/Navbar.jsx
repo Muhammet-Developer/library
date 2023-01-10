@@ -1,4 +1,5 @@
 import Search from "./Search";
+import Img from "../assets/Nrimg.png"
 
 const Navbar = ({text, setText, bookData, setBookData, api}) => {
   return (
@@ -64,15 +65,14 @@ const Navbar = ({text, setText, bookData, setBookData, api}) => {
         text-gray-900
         hover:text-gray-900
         focus:text-gray-900
-        mt-2
         lg:mt-0
         mr-1
       "
             href="#"
           >
             <img
-              src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png"
-              style={{ height: "15px" }}
+              src={Img}
+              style={{ width: "100px" }}
               alt=""
               loading="lazy"
             />

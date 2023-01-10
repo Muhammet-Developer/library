@@ -6,7 +6,7 @@ const Pagination = ({bookData,postsPerPage,setPage,page}) => {
   for (let i = 1; i <= Math.ceil(bookData?.length / postsPerPage); i++) {
     pagesNumbers.push(i);
   }
-  console.log(pagesNumbers);
+  // console.log(pagesNumbers);
   const handleChange = (event, value) => {
     setPage(value)
 }
@@ -21,7 +21,7 @@ function back ()
     <>
     <div className="flex justify-center ">
         <nav aria-label="Page navigation example">
-          <ul className="flex list-style-none mb-6">
+          <ul className="flex list-style-none mb-6 mt-6">
 
            <li className="page-item"><button className="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
                  onClick={back}>Back</button></li>
