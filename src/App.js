@@ -16,6 +16,7 @@ function App() {
   }
   useEffect(() => {
   api()
+  setText("")
   }, [])
   
   return (

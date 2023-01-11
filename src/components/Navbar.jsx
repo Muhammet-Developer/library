@@ -68,7 +68,7 @@ const Navbar = ({text, setText, bookData, setBookData, api}) => {
         lg:mt-0
         mr-1
       "
-            href="#"
+            href="https://books.google.com.tr/" target="_blank"
           >
             <img
               src={Img}
