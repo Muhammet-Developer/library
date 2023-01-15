@@ -40,15 +40,6 @@ const Modal = ({bookItem,open, onClose,}) => {
             <div className="corner-fold" />
             <div className="page-text w-richtext">
             <img className="bookImg" src={thumbnail||NoBookİmage} alt="" />
-              {/* <h3><strong>America</strong></h3>
-              <h6>BY&nbsp;<a href="https://www.poetryfoundation.org/poets/walt-whitman" target="_blank">WALT WHITMAN</a></h6>
-              <p>‍</p>
-              <p>Centre of equal daughters, equal sons,</p>
-              <p>All, all alike endear’d, grown, ungrown, young or old,</p>
-              <p>Strong, ample, fair, enduring, capable, rich,</p>
-              <p>Perennial with the Earth, with Freedom, Law and Love,</p>
-              <p>A grand, sane, towering, seated Mother,</p>
-              <p>Chair’d in the adamant of Time.</p> */}
             </div>
           </div>
         </div>

@@ -1,4 +1,3 @@
-// import BooksStyle from "./Books.module.scss"
 import "./Book.css"
 import NoBookİmage from "../../assets/noImage.jpg"
 import { useState } from "react";
@@ -31,7 +30,6 @@ const Books = ({bookData,loading}) => {
                   <figcaption>
                 <span>{title}</span>
                 <h1>Yazar: {name}</h1>
-                {/* <p>{subTitle}</p> */}
                </figcaption>
                 <div className="inner-book">
                   <div className="img"

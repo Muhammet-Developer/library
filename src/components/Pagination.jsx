@@ -6,7 +6,6 @@ const Pagination = ({bookData,postsPerPage,setPage,page}) => {
   for (let i = 1; i <= Math.ceil(bookData?.length / postsPerPage); i++) {
     pagesNumbers.push(i);
   }
-  // console.log(pagesNumbers);
   const handleChange = (event, value) => {
     setPage(value)
 }
