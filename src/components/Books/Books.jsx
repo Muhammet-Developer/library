@@ -17,13 +17,11 @@ const Books = ({bookData,loading}) => {
       <div className="container">
         {loading ? <BooksLoader/> :
           currentPost?.map((book,item)=>{
-            const{id}=book;
-            let volumeInfo = book.volumeInfo
+            // let volumeInfo = book.volumeInfo
             let thumbnail=book.volumeInfo.imageLinks && book.volumeInfo.imageLinks.smallThumbnail;
             let name = book.volumeInfo.authors
             let title = book.volumeInfo.title
-            let subTitle = book.volumeInfo.subtitle
-          // console.log(book);
+            // let subTitle = book.volumeInfo.subtitle
             return(
               <div className="wrapper" key={item} >
               <div className="book">
